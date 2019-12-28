@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "coreset"
+version = "0.1.0"
+description = "Implementation of coreset as described in 'Fast and Accurate Least-Mean-Squares Solvers (2019)'"
+authors = ["Muttsu <22158218+Muttsu@users.noreply.github.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+numpy = "^1.17.4"
+scipy = "^1.3.3"
+
+[tool.poetry.dev-dependencies]
+pandas = "^0.25.3"
+scikit-learn = "^0.22"
+
+[tool.poetry.scripts]
+coreset_test = 'ablation:main'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
